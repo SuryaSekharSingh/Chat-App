@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  body {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Global scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #121212;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+  }
+
+  /* Messages container scrollbar */
+  .messages-container::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .messages-container::-webkit-scrollbar-track {
+    background: #555;
+  }
+
+  .messages-container::-webkit-scrollbar-thumb {
+    background: #121212;
+    border-radius: 5px;
+  }
+
+  .messages-container::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+  }
+}
